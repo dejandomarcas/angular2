@@ -1,19 +1,23 @@
 import {Component, Template, bootstrap} from 'angular2/angular2';
 
+@Template({
+	url: 'app/tmpl/app.html'
+})
+
 @Component({
 	selector: 'my-app'
 })
 
-@Template({
-	inline: '<h1>Hello {{ name }}</h1>'
-})
-
-class MyAppComponent {
+class nameChange {
 	constructor() {
-		this.name = 'World!';
+		this.name = '';
+	}
+
+	changeName(newName) {
+		this.name = newName;
 	}
 }
 
 export function main() {
-	bootstrap(MyAppComponent);
+	bootstrap(nameChange);
 }
