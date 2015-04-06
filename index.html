@@ -1,23 +1,25 @@
+<!doctype html>
 <html>
 	<head>
 		<title>ng2</title>
-		<script src="/quickstart/dist/es6-shim.js"></script>
+		<link rel="stylesheet" href="app/css/styles.css" media="screen">
 	</head>
 	<body>
-		<my-app>Loading...</my-app>
+
+		<!-- First webcomponent: item list -->
+		<item-list>Loading item list, please wait...</item-list>
+
+		<script src="quickstart/dist/es6-shim.js"></script>
 		<script>
 			System.paths = {
 				'angular2/*': 'quickstart/angular2/*.js',
 				'rtts_assert/*': 'quickstart/rtts_assert/*.js',
-				'tmpl/*': 'app/tmpl/*.html',
-				'app': 'app/app.es6'
+				'components/*': 'app/components/*.es6'
 			};
 
-			System.import('app').then(function(module) {
+			System.import('components/items').then(function(module) {
 				module.main();
 			}, console.log.bind(console));
 		</script>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
 	</body>
 </html>
