@@ -1,0 +1,30 @@
+{
+  "name": "todolist",
+  "version": "0.0.1",
+  "description": "Angular2 practises",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dejandomarcas/angular2.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/dejandomarcas/angular2",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.11",
+    "es6-module-loader": "^0.15.0",
+    "google-spreadsheets": "^0.4.1",
+    "googleapis": "^2.0.1",
+    "hapi": "^8.4.0",
+    "path": "1.4.28",
+    "rtts_assert": "^2.0.0-alpha.11",
+    "systemjs": "^0.14.1",
+    "traceur": "0.0.86",
+    "zone.js": "^0.4.2"
+  }
+}

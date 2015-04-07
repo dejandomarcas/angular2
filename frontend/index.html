@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ng2</title>
+        <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    </head>
+    <body>
+        <main>
+            <app>Loading, please wait...</app>
+        </main>
+        <script src="dist/es6-shim.js"></script>
+        <script>
+            System.paths = {
+                'angular2/*': 'dist/angular2/*.js',
+                'rtts_assert/*': 'dist/rtts_assert/*.js',
+                'main': 'main.es6',
+                'components/*': 'components/*.es6'
+            };
+
+            System.import('main');
+        </script>
+    </body>
+</html>
